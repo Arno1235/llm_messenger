@@ -2,6 +2,10 @@ import os
 import json
 import time
 
+
+# TODO: Change that there is only one 'Q' and one 'A' per block
+
+
 INPUT_PATH = "./data/messages"
 OUTPUT_PATH = "./data/formatted_messages.json"
 
