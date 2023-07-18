@@ -62,7 +62,6 @@ def format_convos(convos):
     if prev_sender == "Arno Van Eetvelde":
 
       QnAs.append({
-        "instruction": "Answer messages as if you are Arno.",
         'input': "A: " + convo[0]['content'],
         'output': "",
       })
@@ -70,7 +69,6 @@ def format_convos(convos):
     else:
 
       QnAs.append({
-        "instruction": "Answer messages as if you are Arno.",
         'input': "Q: " + convo[0]['content'],
         'output': "",
       })
@@ -92,7 +90,6 @@ def format_convos(convos):
           prev_context = QnAs[-1]['input'] + QnAs[-1]['output']
 
           QnAs.append({
-            "instruction": "Answer messages as if you are Arno.",
             'input': prev_context + "\nQ: " + message['content'],
             'output': "",
           })
